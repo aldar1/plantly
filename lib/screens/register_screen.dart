@@ -12,7 +12,6 @@ class RegisterScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: Stack(
           children: [
-            const AppBarPop(),
             Positioned(
               top: 0,
               child: Image.asset(
@@ -20,8 +19,9 @@ class RegisterScreen extends StatelessWidget {
                 height: 300,
                 width: size.width,
                 fit: BoxFit.fitWidth,
-              )
+              ),
             ),
+            const AppBarPop(),
             Align(
               alignment: Alignment.center,
               child: SafeArea(
